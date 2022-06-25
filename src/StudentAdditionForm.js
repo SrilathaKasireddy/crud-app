@@ -49,13 +49,13 @@ export function StudentAdditionForm() {
 
 
   return (
-    <form onSubmit={handleSubmit} >
+    <form style={{padding:10,gap:10,margin:10}} onSubmit={handleSubmit} >
       
       <TextField 
         error={touched.Name && errors.Name}
         variant="outlined"
         label="Name" 
-         
+        style={{padding:10}}
          name="Name" 
          value={values.Name} 
          onChange={handleChange} 
@@ -64,6 +64,7 @@ export function StudentAdditionForm() {
          helperText={touched.Name && errors.Name}/>
        
         <TextField  
+        style={{padding:10}}
         error={touched.Image && errors.Image}
          label="Picture" 
          variant="outlined" 
@@ -75,6 +76,7 @@ export function StudentAdditionForm() {
         helperText={touched.Image && errors.Image}/>
         
         <TextField 
+        style={{padding:10}}
         error={touched.Rollno && errors.Rollno}
         label="Rollno" 
         
@@ -88,6 +90,7 @@ export function StudentAdditionForm() {
            id="filled-error-helper-text" helperText={touched.Rollno && errors.Rollno}/>
        
         <TextField 
+        style={{padding:10}}
         error={touched.Class && errors.Class}
          label="Class" 
          variant="outlined" 
@@ -101,6 +104,7 @@ export function StudentAdditionForm() {
         
         <TextField  
         error={touched.Contactno && errors.Contactno}
+        style={{padding:10}}
         label="Contactno" 
         variant="outlined"
          className="contactno"

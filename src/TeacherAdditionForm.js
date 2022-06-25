@@ -49,9 +49,10 @@ export function TeacherAdditionForm() {
 
 
   return (
-    <form  onSubmit={handleSubmit} >
+    <form  style={{padding:10,gap:10,margin:10}} onSubmit={handleSubmit} >
       
       <TextField 
+       style={{padding:10}}
         error={touched.Name && errors.Name}
         variant="outlined"
         label="Name" 
@@ -63,7 +64,8 @@ export function TeacherAdditionForm() {
          id="filled-error-helper-text"
          helperText={touched.Name && errors.Name}/>
        
-        <TextField  
+        <TextField 
+         style={{padding:10}} 
         error={touched.Image && errors.Image}
          label="Picture" 
          variant="outlined" 
@@ -75,6 +77,7 @@ export function TeacherAdditionForm() {
         helperText={touched.Image && errors.Image}/>
         
         <TextField 
+         style={{padding:10}}
         error={touched.Qualification && errors.Qualification}
         label="Qualification" 
         
@@ -90,6 +93,7 @@ export function TeacherAdditionForm() {
         
         
         <TextField  
+         style={{padding:5}}
         error={touched.Contactno && errors.Contactno}
         label="Contactno" 
         variant="outlined"

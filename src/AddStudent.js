@@ -45,13 +45,13 @@ export function AddStudent() {
   .then(() => navigate("/Students"));
   };
   return (
-    <form onSubmit={handleSubmit} >
+    <form onSubmit={handleSubmit}  style={{padding:10,gap:10,margin:10}}>
       
       <TextField 
       error={touched.Name && errors.Name}
       variant="outlined"
       label="Name" 
-       
+      
        name="Name" 
        value={values.Name} 
        onChange={handleChange} 
